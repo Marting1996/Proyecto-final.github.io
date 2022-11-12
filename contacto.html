@@ -10,24 +10,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous">
+    </script>
 </head>
-<header>
-    <a href="./index.html" class="logo">
-        <img src="./img/logo.jpg" alt="logo">
-        <h2 class="titulo">Orán</h2>
-    </a>
-    <nav>
-        <ul>
-            <li><a href="./que-hacer.html" class="nav-link">Que hacer</a></li>
-            <li><a href="./fechas.html" class="nav-link">Fechas destacadas</a></li>
-            <li><a href="./alojamiento.html" class="nav-link">Alojamientos</a></li>
-            <li><a href="./lugares-cercanos.html" class="nav-link">Lugares cercanos</a></li>
-            <li><a href="./contacto.html" class="nav-link">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+
 
 <body class="contacto">
+    <div id="wrapper">
+        <header id="#header">
+            <a href="./index.html" class="logo"> 
+                <img src="./img/logo.jpg" alt="logo" class="logo1">
+            </a>  
+            <a target="_blank" href="https://hotelmix.es/weather/san-ramon-de-la-nueva-oran-56057"><img src="https://w.bookcdn.com/weather/picture/21_56057_1_4_2bcc71_250_24ae60_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=582&anc_id=87262"  alt="booked.net"/></a>
+            <a href="#" id="menu_on">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+        </header>
+        <nav>
+
+            <ul>
+                <li><a href="./que-hacer.html" class="nav-link">Que hacer</a></li>
+                <li><a href="./fechas.html" class="nav-link">Fechas destacadas</a></li>
+                <li><a href="./alojamiento.html" class="nav-link">Alojamientos</a></li>
+                <li><a href="./lugares-cercanos.html" class="nav-link">Lugares cercanos</a></li>
+                <li><a href="./contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </div>
     <main class="contacto">
         <h1>Contactanos!</h1>
         <form class="contacto" action="enviar.php"></form>
@@ -53,6 +68,18 @@
 
         <p class="copy">Martin Gomez © 2022</p>
     </footer>
+    <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
+ integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous">
+    </script>
+ 
+
+    <script type="text/javascript">
+	$( document ).ready(function() {
+		$('#menu_on').click(function(){ 
+		   $('body').toggleClass('visible_menu'); 
+		 })
+	});
+    </script>
 
 
 
