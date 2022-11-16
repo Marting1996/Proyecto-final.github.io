@@ -6,141 +6,162 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orán</title>
-    <link rel="stylesheet" href="./css/estilos.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous">
-    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
-    <div id="wrapper">
-        <header id="#header">
-            <a href="./index.html" class="logo"> 
-                <img src="./img/logo.jpg" alt="logo" class="logo1">
-            </a>  
-            <a target="_blank" href="https://hotelmix.es/weather/san-ramon-de-la-nueva-oran-56057"><img src="https://w.bookcdn.com/weather/picture/21_56057_1_4_2bcc71_250_24ae60_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=582&anc_id=87262"  alt="booked.net"/></a>
-            <a href="#" id="menu_on">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"> <img src="../img/logo.jpg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./que-hacer.html">Que hacer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./fechas.html" class="nav-link">Fechas destacadas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./alojamiento.html" class="nav-link">Alojamientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./lugares-cercanos.html" class="nav-link">Lugares cercanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="card">
+            <img src="../img/catedral1.jpg" class="card-img-top" alt="Catedral">
+            <div class="card-body">
+                <h5 class="card-title">La Catedral</h5>
+                <p class="card-text">La catedral de Oran tiene un diseño que pocas veces encontraras en el Norte
+                    Argentino, único y atractivo.
+                    Su piedra fundamental data del año 1976 y fue inaugurada el 31 de agosto de 1977, es una muestra de
+                    las
+                    avanzadas del diseño religioso, un moderno edificio que se destaca por su alto campanil</p>
+                <a href="#" class="btn btn-primary">+ Info</a>
+            </div>
+        </div>
 
-        </header>
-        <nav>
+        <div class="card">
+            <img src="../img/kayac3.jpg" class="card-img-top" alt="kayac">
+            <div class="card-body">
+                <h5 class="card-title">Paseo en kayac</h5>
+                <p class="card-text">Un paseo de 10km po la selva con vehiculos 4x4 hasta llegar al rio Bermejo, donde
+                    se hara un increible
+                    paseo en kayac con una duración de 2hs donde nos internaremos en medio de la selva de las yungas</p>
+                <a href="#" class="btn btn-primary">+ Info</a>
+            </div>
+        </div>
 
-            <ul>
-                <li><a href="./que-hacer.html" class="nav-link">Que hacer</a></li>
-                <li><a href="./fechas.html" class="nav-link">Fechas destacadas</a></li>
-                <li><a href="./alojamiento.html" class="nav-link">Alojamientos</a></li>
-                <li><a href="./lugares-cercanos.html" class="nav-link">Lugares cercanos</a></li>
-                <li><a href="./contacto.html" class="nav-link">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="card">
+            <img src="../img/caminata.jpg" class="card-img-top" alt="caminata">
+            <div class="card-body">
+                <h5 class="card-title">Caminata por las yungas</h5>
+                <p class="card-text">Una caminata de nivel 2 a travez de la selva de las yungas con nuestros guias
+                    profesionales donde podra
+                    apreciar en primera persona la abundante flora y fauna del lugar.</p>
+                <a href="#" class="btn btn-primary">+ Info</a>
+            </div>
+        </div>
 
-    </div>
+        <div class="card">
+            <img src="../img/pesca.jpg" class="card-img-top" alt="pesca">
+            <div class="card-body">
+                <h5 class="card-title">Pesca deportiva</h5>
+                <p class="card-text">La clasica pesca con devolucion que se realiza en el Rio Bermejo donde habitan
+                    especies como el Dorado,
+                    Surubi, la Raya de rio y muchos mas!</p>
+                <a href="#" class="btn btn-primary">+ Info</a>
+            </div>
+        </div>
 
-    <main class="que-hacer">
+        <div class="card">
+            <img src="../img/aves.jpg" class="card-img-top" alt="aves">
+            <div class="card-body">
+                <h5 class="card-title">Avistajes de aves</h5>
+                <p class="card-text">En Orán viven aproximadamente 650 especies de aves, lo que representa el 35% de
+                    toda la biodiversidad
+                    presente en Argentina, esto lo hace el lugar ideal para realizar este tipo de actividades</p>
+                <a href="#" class="btn btn-primary">+ Info</a>
+            </div>
+        </div>
 
-        <section class="actividades">
-            <img src="./img/catedral1.jpg" alt="catedral">
-            <h2>La Catedral</h2>
-            <p>La catedral de Oran tiene un diseño que pocas veces encontraras en el Norte Argentino, único y atractivo.
-                Su piedra fundamental data del año 1976 y fue inaugurada el 31 de agosto de 1977, es una muestra de las
-                avanzadas del diseño religioso, un moderno edificio que se destaca por su alto campanil.</p>
-
-
-        </section>
-        <section class="actividades">
-            <img src="./img/kayac3.jpg" alt="kayac">
-            <h2>Paseo en kayac</h2>
-            <p>Un paseo de 10km po la selva con vehiculos 4x4 hasta llegar al rio Bermejo, donde se hara un increible
-                paseo en kayac con una duración de 2hs donde nos internaremos en medio de la selva de las yungas</p>
-        </section>
-        <section class="actividades">
-            <img src="./img/caminata.jpg" alt="caminata">
-            <h2>Caminana por las yugas</h2>
-            <p>Una caminata de nivel 2 a travez de la selva de las yungas con nuestros guias profesionales donde podra
-                apreciar en primera persona la abundante flora y fauna del lugar.</p>
-
-        </section>
-        <section class="actividades">
-            <img src="./img/pesca.jpg" alt="pesca">
-            <h2>Pesca deportiva</h2>
-            <p>La clasica pesca con devolucion que se realiza en el Rio Bermejo donde habitan especies como el Dorado,
-                Surubi, la Raya de rio y muchos mas!</p>
-
-        </section>
-        <section class="actividades">
-            <img src="./img/aves.jpg" alt="aves">
-            <h2>Avistaje de aves</h2>
-            <p>En Orán viven aproximadamente 650 especies de aves, lo que representa el 35% de toda la biodiversidad
-                presente en Argentina, esto lo hace el lugar ideal para realizar este tipo de actividades</p>
-
-        </section>
-        <section class="actividades">
-            <img src="./img/bike.jpg" alt="bici">
-            <h2>Salí a andar en bici!</h2>
-            <p>Un paseo en bicicleta a travez de la selva y por los margenes de los rios con distintos tipos de
-                recorrido para todo tipo de personas</p>
-
-        </section>
-        <section class="actividades">
-            <img src="./img/humita.jpg" alt="" humita>
-            <h2>Prueba nuesros platos</h2>
-            <p>Disfruta de todos los platos tradicionales del norte Argentino tales como el Locro, empanadas, humitas,
-                tamales y muchos mas!</p>
-
-        </section>
-        <section class="actividades">
-            <img src="./img/cultura.jpg" alt="cultura">
-            <h2>Nuestras culturas</h2>
-            <p>Ya que Orán esta ubicado al norte de la provicia de Salta la ciudad esta embebida con las tradiciones y
-                culturas que identifican a las provicias del norte de Argentina</p>
-
-        </section>
-        <section class="actividades">
-            <img src="./img/artesanos.jpg" alt="artesania">
-            <h2>Nuetras artesanias</h2>
-            <p>Sin duda una de las cosas lindas de viajar, además de lo que nos llevamos en las retinas, es poder traer
-                algún recuerdo del lugar. Y en Orán se encuentran cosas únicas. El visitante podrá conocer y disfrutar
-                de la calidad y belleza de artesanías en maderas de brillantes colores como palo santo, guayacán,
+        <div class="card">
+            <img src="../img/bike.jpg" class="card-img-top" alt="bike">
+            <div class="card-body">
+                <h5 class="card-title">Bicicletas</h5>
+                <p class="card-text">Un paseo en bicicleta a travez de la selva y por los margenes de los rios con
+                    distintos tipos de
+                    recorrido para todo tipo de personas</p>
+                <a href="#" class="btn btn-primary">+ Info</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../img/humita.jpg" class="card-img-top" alt="gastronomia">
+            <div class="card-body">
+                <h5 class="card-title">Gastronomia</h5>
+                <p class="card-text">Disfruta de todos los platos tradicionales del norte Argentino tales como el Locro,
+                    empanadas, humitas,
+                    tamales y muchos mas!</p>
+                <a href="#" class="btn btn-primary">+ Info</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../img/cultura.jpg" class="card-img-top" alt="Culturas">
+            <div class="card-body">
+                <h5 class="card-title">Culturas</h5>
+                <p class="card-text">Ya que Orán esta ubicado al norte de la provicia de Salta la ciudad esta embebida con las tradiciones y culturas que identifican a las provicias del norte de Argentina</p>
+                <a href="#" class="btn btn-primary">+ Info</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../img/artesanos.jpg" class="card-img-top" alt="Artesatias">
+            <div class="card-body">
+                <h5 class="card-title">Artesanias</h5>
+                <p class="card-text">Sin duda una de las cosas lindas de viajar, además de lo que nos llevamos en las retinas, es poder traer algún recuerdo del lugar. Y en Orán se encuentran cosas únicas. El visitante podrá conocer y disfrutar de la calidad y belleza de artesanías en maderas de brillantes colores como palo santo, guayacán,
                 quebracho y mistol. También los pobladores trabajan una fibra vegetal llamada “chaguar” para hacer
-                originales telas, bolsos y cinturones, con técnicas ancestrales de elaboración..</p>
-
-        </section>
+                originales telas, bolsos y cinturones, con técnicas ancestrales de elaboración.</p>
+                <a href="#" class="btn btn-primary">+ Info</a>
+            </div>
+        </div>
     </main>
 
     <footer class="que-hacer">
         <div class="iconos">
             <div class="face">
-                <a href="#"><img src="./img/facebook.png" alt="face"></a>
+                <a href="#"><img src="../img/facebook.png" alt="face"></a>
             </div>
             <div class="insta">
-                <a href="#"><img src="./img/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="../img/instagram.png" alt="instagram"></a>
             </div>
             <div class="wpp">
-                <a href="#"><img src="./img/whatsapp.png" alt="wpp"></a>
+                <a href="#"><img src="../img/whatsapp.png" alt="wpp"></a>
             </div>
         </div>
 
         <p class="copy">Martin Gomez © 2022</p>
     </footer>
-    <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
- integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous">
-    </script>
- 
-
-    <script type="text/javascript">
-	$( document ).ready(function() {
-		$('#menu_on').click(function(){ 
-		   $('body').toggleClass('visible_menu'); 
-		 })
-	});
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 
 </body>
 
