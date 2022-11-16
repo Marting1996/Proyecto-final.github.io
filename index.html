@@ -6,96 +6,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orán</title>
-    <link rel="stylesheet" href="./css/estilos.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous">
-</script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/estilos.css">
+
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"> <img src="./img/logo.jpg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Paginas/que-hacer.html">Que hacer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Paginas/fechas.html" class="nav-link">Fechas destacadas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Paginas/alojamiento.html" class="nav-link">Alojamientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Paginas/lugares-cercanos.html" class="nav-link">Lugares cercanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Paginas/contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <div id="wrapper">
-        <header id="#header">
-            <a href="./index.html" class="logo"> 
-                <img src="./img/logo.jpg" alt="logo" class="logo1">
-            </a>  
-            <a target="_blank" href="https://hotelmix.es/weather/san-ramon-de-la-nueva-oran-56057"><img src="https://w.bookcdn.com/weather/picture/21_56057_1_4_2bcc71_250_24ae60_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=582&anc_id=87262"  alt="booked.net"/></a>
-            <a href="#" id="menu_on">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-
-        </header>
-        <nav>
-
-            <ul>
-                <li><a href="./que-hacer.html" class="nav-link">Que hacer</a></li>
-                <li><a href="./fechas.html" class="nav-link">Fechas destacadas</a></li>
-                <li><a href="./alojamiento.html" class="nav-link">Alojamientos</a></li>
-                <li><a href="./lugares-cercanos.html" class="nav-link">Lugares cercanos</a></li>
-                <li><a href="./contacto.html" class="nav-link">Contacto</a></li>
-            </ul>
-        </nav>
-
+    <div class="hero">
+        <h1>Bienvenidos</h1>
     </div>
+    <section class="secciones">
+        <div class="evento">
+            <div class="foto" data-aos="fade-up">
+                <img src="./img/oran2.jpg" alt="oran">
+            </div>
+            <p class="texto">San Ramón de la Nueva Orán, más conocida como Orán, es una ciudad del norte de Argentina,
+                en la provincia de Salta.</p>
+            <p class="texto-desk">Es cabecera del departamento Orán, en el norte de la provincia. En el censo de 2010
+                registró una población de 82 413 habitantes, de los cuales 76 070 habitan la zona urbana.​ Este hace que
+                la convierta en el 2º mayor centro urbano de la provincia y uno de los 40 mayores centros urbanos del
+                país. Fue fundada el 31 de agosto de 1794 por el español Ramón García de León y Pizarro, quien la
+                bautizó como San Ramón de la Nueva Orán por ser esa fecha el día de San Ramón Nonato, y por haber nacido
+                él mismo en la Ciudad argelina de Orán.Está situada a 230 km de su capital provincial, Salta, en una
+                zona de clima tropical (se halla 33km al norte del trópico de Capricornio), de grandes ríos,
+                principalmente dedicada a los cultivos comerciales. El centro urbano se encuentra a 32 km al sur de la
+                frontera boliviana, a unos 3 km al oeste del caudaloso río Bermejo, y a escasos 20 km al sur de la
+                confluencia del Río Bermejo con el Río Grande de Tarija, siendo atravesado el ejido de la ciudad por la
+                ruta nacional RN 50</p>
+        </div>
+    </section>
 
-
-    </div>
-
-
-
-
-    <main>
-
-        <section class="cartel">
-            <img src="./img/oran2.jpg" alt="oran">
-            <h1>Bienvenidos!</h1>
-            <p>San Ramón de la Nueva Orán, más conocida como Orán, es una ciudad del norte de Argentina, en la
-                provincia
-                de
-                Salta. Es cabecera del departamento Orán, en el norte de la provincia. En el censo de 2010 registró
-                una
-                población de 82 413 habitantes, de los cuales 76 070 habitan la zona urbana.1​ Este hace que la
-                convierta en
-                el 2º mayor centro urbano de la provincia y uno de los 40 mayores centros urbanos del país. Fue
-                fundada
-                el
-                31 de agosto de 1794 por el español Ramón García de León y Pizarro, quien la bautizó como San Ramón
-                de
-                la
-                Nueva Orán por ser esa fecha el día de San Ramón Nonato, y por haber nacido él mismo en la ciudad
-                argelina
-                de Orán.
-
-
-                Orán está situada a 230 km de su capital provincial, Salta, en una zona de clima tropical (se halla
-                33
-                km al
-                norte del trópico de Capricornio), de grandes ríos, principalmente dedicada a los cultivos
-                comerciales.
-
-
-                El centro urbano se encuentra a 32 km al sur de la frontera boliviana, a unos 3 km al oeste del
-                caudaloso
-                río Bermejo, y a escasos 20 km al sur de la confluencia del Río Bermejo con el Río Grande de Tarija,
-                siendo
-                atravesado el ejido de la ciudad por la ruta nacional RN 50</p>
-        </section>
-
-
-
-
-
-
-
-        <section class="historia">
-            <h2>Historia</h2>
-            <img src="./img/historia.jpg" alt="historia">
-            <p>Los primeros habitantes de la zona fueron los churumatas y mataguayos (emparentados con los wichís),
+    <section class="secciones">
+        <div class="evento">
+            <div class="foto" data-aos="fade-right">
+                <img src="./img/historia.jpg" alt="historia">
+            </div>
+            <p class="texto">Fue fundada el 31 de agosto de 1794 por el español Ramón García de León y Pizarro, quien la
+                bautizó como San Ramón de la Nueva Orán por ser esa fecha el día de San Ramón Nonato, y por haber nacido
+                él mismo en la ciudad argelina de Orán.</p>
+            <p class="texto-desk">
+                Los primeros habitantes de la zona fueron los churumatas y mataguayos (emparentados con los wichís),
                 dedicados a la caza, la pesca en los ríos circundantes y el cultivo de algunas especies. En
                 ocasiones se
                 unían en alianzas y en otras se producían violentos conflictos por el control de los recursos.
@@ -144,13 +130,22 @@
                 así el nexo directo entre la ciudad de Salta y la villa de Tarija. En la Biblioteca del Congreso de
                 los
                 Estados Unidos se conserva un mapa de la región de Orán al momento de fundarse la ciudad, en 1794,2​
-                probablemente confeccionado por García de León y Pizarro o alguien de su entorno.</p>
-        </section>
+                probablemente confeccionado por García de León y Pizarro o alguien de su entorno.
 
-        <section class="atractivos">
-            <h2>Atractivos</h2>
-            <img src="./img/me-encanta.jpg" alt="me-encanta">
-            <p>Aunque San Ramón de la Nueva Orán tiene ya más de 200 años de antigüedad, posee pocos edificios
+            </p>
+        </div>
+    </section>
+
+    <section class="secciones">
+        <div class="evento">
+            <div class="foto" data-aos="fade-down-right">
+                <img src="./img/me-encanta.jpg" alt="me-encanta">
+            </div>
+            <p class="texto">En un radio de 50 km a la redonda, el turista puede visitar las ruinas de la antigua misión
+                de la
+                ciudad de Orán, y los numerosos arroyos y ríos que le son próximos</p>
+            <p class="texto-desk">
+                Aunque San Ramón de la Nueva Orán tiene ya más de 200 años de antigüedad, posee pocos edificios
                 antiguos, por la destrucción sísmica. Un colegio de estilo colonial y la catedral, moderno edificio
                 de sobrias líneas resaltadas por el alto y esbelto campanil, son las construcciones más
                 interesantes. Llama también la atención del visitante el arbolado público de la ciudad, con especies
@@ -162,9 +157,12 @@
                 ciudad de Orán, y los numerosos arroyos y ríos que le son próximos, donde es posible practicar la
                 pesca deportiva en el río Bermejo y en territorio boliviano. Todos aptos para el turismo de
                 aventura, encontrándose la ciudad en el linde oriental de la reserva de biosfera de las Yungas del
-                programa MaB, región propicia para la práctica de ciclo turismo, mountain bike y moto enduro.</p>
-        </section>
-    </main>
+                programa MaB, región propicia para la práctica de ciclo turismo, mountain bike y moto enduro.
+
+            </p>
+        </div>
+    </section>
+
     <footer>
         <div class="iconos">
             <div class="face">
@@ -180,27 +178,14 @@
 
         <p class="copy">Martin Gomez © 2022</p>
     </footer>
-    
-
-<script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
- integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous">
-</script>
- 
-
-<script type="text/javascript">
-	$( document ).ready(function() {
-		$('#menu_on').click(function(){ 
-		   $('body').toggleClass('visible_menu'); 
-		 })
-	});
-</script>
-
-
-
-
-
-
-
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
